@@ -1,7 +1,7 @@
 {
   "value": 100,
   "left": {
-    "value": 19,
+    "value": 90,
     "left": {
       "value": 17,
       "left": {
@@ -12,9 +12,9 @@
       }
     },
     "right": {
-      "value": 3,
+      "value": 19,
       "left": {
-        "value": 90
+        "value": 3
       }
     }
   },
