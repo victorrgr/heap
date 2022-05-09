@@ -29,6 +29,6 @@ fs.writeFileSync("./output/HeapClass.json", JSON.stringify(res, getCircularRepla
 console.log("Result in ./output/HeapClass.json");
 
 // res = heapSimple.heapInsertionSimple([100, 19, 36, 17, 3, 25, 1, 2, 7], 90);
-res = heapSimple.heapInsertionSimple([100, 19, 36, 17, 3, 25, 1, 2, 7], 101);
+res = heapSimple.heapInsertionSimple([100, 19, 36, 17, 3, 25, 1, 2, 7], 90);
 fs.writeFileSync("./output/HeapSimple.json", JSON.stringify(res));
 console.log("Result in ./output/HeapSimple.json");

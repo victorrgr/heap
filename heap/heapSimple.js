@@ -4,11 +4,8 @@
  * @param {number[]} vector 
  * @returns {number} Parent value of a specified index inside specified vector
  */
- function getParent(index, vector) {
-  if (index % 2 == 0)
-    return vector[(index / 2) - 1];
-  else
-    return vector[(index - 1) / 2];
+function getParent(index, vector) {
+  return vector[Math.floor((index - 1) / 2)];
 }
 
 /**
@@ -17,12 +14,14 @@
  * @returns {number} Parent vector's index positon
  */
 function getParentIndex(index) {
-  if (index % 2 == 0)
-    return (index / 2) - 1;
-  else
-    return (index - 1) / 2;
+  return Math.floor((index - 1) / 2)
 }
 
+// TODO: Utilizar recursividade para fazer o ajuste do heap
+// Fazer com que a função se chame com os parâmetros:
+// index atual a ser calculado, pai atual do index,
+// filho à esquerda, filho à direita
+//  
 /**
  * 
  * @param {number[]} heapVector 
