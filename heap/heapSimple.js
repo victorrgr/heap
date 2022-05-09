@@ -1,4 +1,3 @@
-
 /**
  * 
  * @param {number} index 
@@ -38,7 +37,7 @@ function heapInsertionSimple(heapVector, insertion) {
   let elementIndex = extremity + 1;
 
   while (true) {
-    if (getParent(elementIndex, heapVector) >= insertion) {
+    if (getParent(elementIndex, heapVector) == undefined || getParent(elementIndex, heapVector) >= insertion) {
       break;
     } else {
       let parentIndex = getParentIndex(elementIndex);

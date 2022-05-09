@@ -51,7 +51,7 @@ function heapInsertionClass(heapVector, insertion) {
 function adjustInsertion(treeNodeArray) {
   let insertion = treeNodeArray[treeNodeArray.length -1];
   while (true) {
-    if (insertion.parent.value >= insertion.value) {
+    if (insertion.parent == undefined || insertion.parent.value >= insertion.value) {
       break;
     } else {
       let parent = insertion.parent;
